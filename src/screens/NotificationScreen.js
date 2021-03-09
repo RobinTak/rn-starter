@@ -10,7 +10,7 @@ posts = [
         title: "Go Paperless with office",
         text:
             "Tap to scan documents and share",
-        timestamp: 1569109273726,
+        timestamp: 1615280749063,
         avatar: require("../../assets/tempAvatar.jpg"),
         image: require("../../assets/tempImage1.jpg")
     },
@@ -19,7 +19,7 @@ posts = [
         title: "Screenshot found",
         text:
             "Edit, convert, share and do more..",
-        timestamp: 1569109273726,
+        timestamp: 1615279224665,
         avatar: require("../../assets/tempAvatar.jpg"),
         image: require("../../assets/tempImage1.jpg")
     },
@@ -28,7 +28,7 @@ posts = [
         title: "Daisy shared a file with you",
         text:
             "Good Point, please add the slide...",
-        timestamp: 1569109273726,
+        timestamp: 1599109273726,
         avatar: require("../../assets/tempAvatar.jpg"),
         image: require("../../assets/tempImage1.jpg")
     },
@@ -73,7 +73,6 @@ posts = [
                         <View>
                             <Text style={styles.name}>{post.title}</Text>
                         </View>
-                        <Ionicons name="ios-more" size={24} color="#73788B" />
                     </View>
                     <Text style={styles.post}>{post.text}</Text>
                     <Text style={styles.timestamp}>{moment(post.timestamp).fromNow()}</Text>
@@ -126,16 +125,15 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 15,
-        fontWeight: "500",
-        color: "#454D65"
+        fontWeight: "bold"
     },
     timestamp: {
         fontSize: 11,
-        color: "#C4C6CE",
+        color: "#838899",
         marginTop: 4
     },
     post: {
-        marginTop: 16,
+        marginTop: 0,
         fontSize: 14,
         color: "#838899"
     },
